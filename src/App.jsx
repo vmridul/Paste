@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Navbar from "./components/navbar";
-import Home from "./components/home";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import Paste from "./components/Paste";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
