@@ -68,15 +68,15 @@ const Paste = () => {
                   onClick={(e) => e.stopPropagation()}
                   className="flex gap-4 absolute right-5 top-5"
                 >
-                  <button className="hover:bg-blue-900 transition-all ease-in p-3 bg-[#121212] rounded-md text-sm">
+                  <button className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-sm">
                     <NavLink to={`/?pasteId=${paste._id}`}>Edit</NavLink>
                   </button>
-                  <button className="hover:bg-blue-900 transition-all ease-in p-3 bg-[#121212] rounded-md text-sm">
+                  <button className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-sm">
                     <NavLink to={`/pastes/${paste._id}`}>View</NavLink>
                   </button>
                   <button
                     onClick={() => handleDelete(paste._id)}
-                    className="hover:bg-red-900 transition-all ease-in p-3 bg-[#121212] rounded-md text-sm"
+                    className="hover:bg-red-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-sm"
                   >
                     Delete
                   </button>
@@ -85,7 +85,7 @@ const Paste = () => {
                       navigator.clipboard.writeText(paste.value);
                       toast.success("Copied to clipboard");
                     }}
-                    className="hover:bg-green-900 transition-all ease-in p-3 bg-[#121212] rounded-md text-sm"
+                    className="hover:bg-green-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-sm"
                   >
                     Copy
                   </button>
@@ -94,7 +94,7 @@ const Paste = () => {
                       setShowPopupId(paste._id);
                       setShowPopup(true);
                     }}
-                    className="hover:bg-blue-900 transition-all ease-in p-3 bg-[#121212] rounded-md text-sm"
+                    className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-sm"
                   >
                     Share
                   </button>
