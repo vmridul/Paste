@@ -63,7 +63,7 @@ const Paste = () => {
                 onClick={() => navigate(`/pastes/${paste._id}`)}
               >
                 <div className="font-medium text-3xl max-w-[150px]">{paste.title}</div>
-                <div className="mt-2 max-w-[85%]">{paste.value}</div>
+                <div className="mt-2">{paste.value}</div>
                 <div
                   onClick={(e) => e.stopPropagation()}
                   className="flex gap-4 absolute right-5 top-5"
