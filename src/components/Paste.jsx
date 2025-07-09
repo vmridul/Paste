@@ -62,7 +62,7 @@ const Paste = () => {
                 className="relative border-1 border-gray-500 rounded-lg w-[700px] p-4 hover:bg-[#2b2b2b]"
                 onClick={() => navigate(`/pastes/${paste._id}`)}
               >
-                <div className="font-medium text-3xl max-w-[150px]">{paste.title}</div>
+                <div className="font-medium text-3xl">{paste.title}</div>
                 <div className="mt-2">{paste.value}</div>
                 <div
                   onClick={(e) => e.stopPropagation()}
