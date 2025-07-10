@@ -74,11 +74,6 @@ const Paste = () => {
   </button>
 </NavLink>
 
-<NavLink to={`/pastes/${paste._id}`}>
-  <button className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-xs">
-    View
-  </button>
-</NavLink>
                   <button
                     onClick={() => handleDelete(paste._id)}
                     className="hover:bg-red-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-xs"
