@@ -68,12 +68,17 @@ const Paste = () => {
                   onClick={(e) => e.stopPropagation()}
                   className="flex gap-3 absolute right-5 top-5"
                 >
-                  <button className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-xs">
-                    <NavLink to={`/?pasteId=${paste._id}`}>Edit</NavLink>
-                  </button>
-                  <button className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-xs">
-                    <NavLink to={`/pastes/${paste._id}`}>View</NavLink>
-                  </button>
+                  <NavLink to={`/?pasteId=${paste._id}`}>
+  <button className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-xs">
+    Edit
+  </button>
+</NavLink>
+
+<NavLink to={`/pastes/${paste._id}`}>
+  <button className="hover:bg-blue-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-xs">
+    View
+  </button>
+</NavLink>
                   <button
                     onClick={() => handleDelete(paste._id)}
                     className="hover:bg-red-900 transition-all ease-in p-2 pl-3 pr-3 bg-[#121212] rounded-md text-xs"
