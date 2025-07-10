@@ -21,7 +21,7 @@ const Viewpaste = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
         <button className="bg-[#121212] p-2 pl-10 pr-10 text-gray-400 rounded-sm hover:bg-blue-900 hover:text-white transition-all ease-in">
-          <NavLink to="/pastes">Go Back</NavLink>
+          <NavLink to="/">Go Back</NavLink>
         </button>
       </div>
 
