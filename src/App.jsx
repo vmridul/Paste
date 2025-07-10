@@ -12,7 +12,6 @@ function App() {
       path: "/",
       element: (
         <div>
-          <Navbar />
           <div className="flex justify-center gap-20 ">
             <Home />
             <Paste />
@@ -24,7 +23,6 @@ function App() {
       path: "/pastes",
       element: (
         <div>
-          <Navbar />
           <Paste />
         </div>
       ),
@@ -33,7 +31,6 @@ function App() {
       path: "/pastes/:id",
       element: (
         <div>
-          <Navbar />
           <Viewpaste />
         </div>
       ),
