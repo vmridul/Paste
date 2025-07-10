@@ -20,9 +20,11 @@ const Viewpaste = () => {
           disabled
           onChange={(e) => setTitle(e.target.value)}
         />
+        <NavLink to="/">
         <button className="bg-[#121212] p-2 pl-10 pr-10 text-gray-400 rounded-sm hover:bg-blue-900 hover:text-white transition-all ease-in">
-          <NavLink to="/">Go Back</NavLink>
+          Go Back
         </button>
+          </NavLink>
       </div>
 
       <div className="flex justify-center mt-3">
